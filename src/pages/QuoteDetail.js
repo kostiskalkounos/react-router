@@ -4,8 +4,8 @@ import HighLightedQuote from "../components/quotes/HighlightedQuote";
 import Comments from "../components/comments/Comments";
 
 const DUMMY_QUOTES = [
-  { id: "q1", author: "Kostis", text: "Neovim > Emacs" },
-  { id: "q2", author: "Mary", text: "I agree" },
+  { id: "q1", author: "Mary", text: "I agree" },
+  { id: "q2", author: "Kostis", text: "Neovim > Emacs" },
 ];
 
 const QuoteDetail = () => {
