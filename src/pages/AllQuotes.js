@@ -7,10 +7,12 @@ import useHttp from "../hooks/use-http";
 import { getAllQuotes } from "../lib/api";
 
 const AllQuotes = () => {
-  const { sendRequest, status, data: loadedQuotes, error } = useHttp(
-    getAllQuotes,
-    true
-  );
+  const {
+    sendRequest,
+    status,
+    data: loadedQuotes,
+    error,
+  } = useHttp(getAllQuotes, true);
 
   useEffect(() => {
     sendRequest();

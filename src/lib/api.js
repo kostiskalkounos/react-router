@@ -65,7 +65,7 @@ export const addComment = async (requestData) => {
       headers: {
         "Content-Type": "application/json",
       },
-    }
+    },
   );
   const data = await response.json();
 

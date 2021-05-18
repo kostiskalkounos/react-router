@@ -48,7 +48,7 @@ const useHttp = (requestFunction, startWithPending = false) => {
         });
       }
     },
-    [requestFunction]
+    [requestFunction],
   );
 
   return {

@@ -13,10 +13,12 @@ const QuoteDetail = () => {
 
   const { quoteId } = params;
 
-  const { sendRequest, status, data: loadedQuote, error } = useHttp(
-    getSingleQuote,
-    true
-  );
+  const {
+    sendRequest,
+    status,
+    data: loadedQuote,
+    error,
+  } = useHttp(getSingleQuote, true);
 
   useEffect(() => {
     sendRequest(quoteId);
